@@ -13,6 +13,6 @@
 ## テスト
 - TDD（テストを先に書く）。名前は `should_<期待>_when_<条件>`。`@Nested` でまとめる。本文は Given / When / Then
 - Web のテストは `@SpringBootTest` + `@AutoConfigureMockMvc` + `@ActiveProfiles("nodb")` + `MockMvcTester`
-  - `nodb` プロファイル（`src/test/resources/application-nodb.properties`）は DataSource / Hibernate JPA / Flyway の自動構成を外し、Docker なしで動く
+  - `nodb` プロファイル（`apps/api/src/test/resources/application-nodb.properties`）は DataSource / Hibernate JPA / Flyway の自動構成を外し、Docker なしで動く
 - Testcontainers を使うテストには `@Testcontainers(disabledWithoutDocker = true)` を付ける
 - OpenAPI 3.1 の `type` は、型が1つなら文字列、複数なら配列で出力される。テストでは両方の形を扱う
