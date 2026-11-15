@@ -2,7 +2,7 @@
 
 - Java 25（Gradle toolchain）、Gradle 9.8.2（wrapper）、Kotlin DSL
 - Spring Boot 4.1.2（webmvc, validation, data-jpa, flyway, actuator, docker-compose, devtools）。Jackson 3
-- PostgreSQL（`compose.yaml` の `postgres:latest`。テストでは Testcontainers）
+- PostgreSQL（`apps/api/compose.yaml` の `postgres:latest`。テストでは Testcontainers）
 - springdoc-openapi-starter-webmvc-ui 3.1.1
   - Boot 4.1 に対応するのは 3.1 系（Boot 4.0 は 3.0 系、Boot 3.5 は 2.8/2.9 系）
   - `springdoc.api-docs.version=openapi_3_1`

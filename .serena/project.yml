@@ -1,5 +1,5 @@
 # the name by which the project can be referenced within Serena/when chatting with the LLM.
-project_name: "api-todo"
+project_name: "todo-app"
 
 # list of language servers to start when using the LSP backend; choose from:
 #   ada                    al                     angular                ansible                astro
@@ -95,7 +95,7 @@ ls_specific_settings: {}
 #     - "./subproject1"
 #     - "./subproject2"
 ls_workspace_folders:
-- "."
+- "./apps/api"
 
 # list of additional workspace folder paths for cross-package reference support.
 # Paths can be absolute or relative to the project root.

@@ -6,7 +6,7 @@ ToDo 用 REST API（Spring Boot）。DB 連携は未実装で、コントロー�
 - ベースパッケージ: `dev.tminasen.api_todo`（`todoapi` ではない。Initializr がハイフンを `_` に置換した）
 - `todo/`: リクエスト・レスポンス DTO（record）と `TodoController`（`/todos`）
 - `openapi/`: `RecordNullabilityCustomizer`（JSpecify `@Nullable` を OpenAPI 3.1 に反映）と、record をスキャンして Bean を作る `OpenApiConfig`
-- 設定: `src/main/resources/application.properties`（yml ではない）
+- 設定: `apps/api/src/main/resources/application.properties`（yml ではない）
 - DB マイグレーション（`db/migration`）とエンティティはまだない
 
 ## 不変条件
